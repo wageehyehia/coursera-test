@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+body , html {
+    margin: 0;
+    border: none;
+    background-color: antiquewhite;
+}
+.center {
+    width: 90%;;
+    margin: 50px auto;
+    padding: 2% 2%;
+    text-align: left;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+}
+
+input {
+    
+    margin: 2px 2%;
+    /*outline: 1px solid gainsboro;*/
+    width: 70%;
+
+    font-size: large;
+}
+label {
+    direction: rtl;
+    text-align: right;
+    vertical-align: middle;
+    margin: 4px 0;
+    width: 20%;
+}
+.calcBtn {
+    display: inline-block;
+    text-align: center;
+    padding: 3%;
+    margin:2% 2%;
+    width: 33%;
+}
+#results {
+    background-color: gainsboro;
+    padding: 4%;
+    width: 70%;
+    margin: 2% 2%;
+    text-align: center;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+hr {
+    color: bisque;
+    height: 1px;
+    width: 100%;
+}

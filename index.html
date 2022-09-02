@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>حساب تصرف العكرة</title>
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <meta charset="utf-8">
+        <script src="./myjs.js"></script>
+        <link rel="stylesheet" href="./mycss.css">
+    </head>
+    <body>
+        <div class="center">
+        <form>
+            <div class="clearfix">
+                <input type="text" id="tCond" value="600">
+                <label for="tCond">توصيلية الطرد</label><br>
+                <input type="text" id="rCond" value="320">
+                <label for="rCond">توصيلية المأخذ</label><br>
+                <input type="text" id="wCond" value="1160">
+                <label for="wCond">توصيلية الأبار</label><br>
+
+                <input type="text" id="rFlow" value="400">
+                <label for="rFlow" >تصرف عنبر العكرة</label><br>
+            </div>
+           
+            <button class="calcBtn" type="button" onclick="calculate()" >أحسب التصرفات </button>
+
+            <button class="calcBtn" type="button" onclick="recal();reset();" >  أعادة </button>
+        
+        </form>
+        <div id="results">
+            <span> نسبة المياه العكرة</span><p id="row">-------</p>
+            <span> نسبة مياه الأبار</span><p id="wills">-------</p>
+            <span> تصرف الأبار </span><p id="wFlow">-------</p>
+        </div>
+    </div>
+    </body>
+</html>
